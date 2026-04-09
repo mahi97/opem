@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "package": "opem",
+  "description": "Agent skills for OPEM development and maintenance",
+  "layers": {
+    "consumer": {
+      "manifest": "opem/.agent/skills.json",
+      "description": "Skills shipped with the pip package for end users"
+    },
+    "maintainer": {
+      "description": "Skills for repository contributors and maintainers",
+      "skills": [
+        {
+          "id": "opem-dev:dev-setup",
+          "name": "Development Environment Setup",
+          "description": "Set up a local development environment for OPEM.",
+          "file": "skills/maintainer/dev-setup.md",
+          "tags": ["setup", "contributing"]
+        },
+        {
+          "id": "opem-dev:testing",
+          "name": "Testing Guide",
+          "description": "Run, write, and debug OPEM tests.",
+          "file": "skills/maintainer/testing.md",
+          "tags": ["testing", "ci"]
+        },
+        {
+          "id": "opem-dev:add-model",
+          "name": "Add a New Fuel Cell Model",
+          "description": "Step-by-step guide to add a new static or dynamic PEMFC model.",
+          "file": "skills/maintainer/add-model.md",
+          "tags": ["models", "contributing"]
+        },
+        {
+          "id": "opem-dev:release",
+          "name": "Release Process",
+          "description": "How to prepare and publish a new OPEM release.",
+          "file": "skills/maintainer/release.md",
+          "tags": ["release", "publishing"]
+        }
+      ]
+    }
+  }
+}

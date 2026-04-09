@@ -38,6 +38,9 @@ def read_description():
 setup(
     name='opem',
     packages=['opem', 'opem.Static', 'opem.Dynamic'],
+    package_data={
+        'opem': ['.agent/skills.json', '.agent/skills/*.md'],
+    },
     version='1.4',
     description='Open Source PEM Cell Simulation Tool',
     long_description=read_description(),

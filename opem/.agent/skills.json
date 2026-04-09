@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "package": "opem",
+  "package_version": "1.4",
+  "description": "Agent skills for OPEM — Open-Source PEMFC Simulation Tool",
+  "skills": [
+    {
+      "id": "opem:select-model",
+      "name": "Select a PEMFC Model",
+      "description": "Choose the right OPEM fuel cell model for your simulation use case.",
+      "file": "skills/select-model.md",
+      "tags": ["getting-started", "model-selection"]
+    },
+    {
+      "id": "opem:run-static-model",
+      "name": "Run a Static PEMFC Simulation",
+      "description": "Execute a static fuel cell analysis using Amphlett, Chamberline-Kim, or Larminie-Dicks models.",
+      "file": "skills/run-static-model.md",
+      "tags": ["simulation", "static"]
+    },
+    {
+      "id": "opem:run-dynamic-model",
+      "name": "Run a Dynamic PEMFC Simulation",
+      "description": "Execute a dynamic fuel cell analysis using Padulles, Padulles-Hauer, Padulles-Amphlett, or Chakraborty models.",
+      "file": "skills/run-dynamic-model.md",
+      "tags": ["simulation", "dynamic"]
+    },
+    {
+      "id": "opem:interpret-results",
+      "name": "Interpret OPEM Results",
+      "description": "Understand output dictionaries, units, report files (.opem, .csv, .html), and overall parameters.",
+      "file": "skills/interpret-results.md",
+      "tags": ["results", "analysis"]
+    },
+    {
+      "id": "opem:troubleshoot",
+      "name": "Troubleshoot OPEM Errors",
+      "description": "Diagnose and fix common simulation errors including None outputs, warnings, and parameter issues.",
+      "file": "skills/troubleshoot.md",
+      "tags": ["debugging", "errors"]
+    }
+  ]
+}
